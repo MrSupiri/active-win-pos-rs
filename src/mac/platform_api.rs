@@ -83,6 +83,7 @@ impl PlatformApi for MacPlatformApi {
                         process_id: active_window_pid as u64,
                         position: win_pos,
                         title: String::from(""),
+                        window_class: String::from("")
                     };
 
                     return Ok(active_window)
