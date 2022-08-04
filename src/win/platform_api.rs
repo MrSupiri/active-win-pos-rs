@@ -38,6 +38,7 @@ impl PlatformApi for WindowsPlatformApi {
             position: active_window_position,
             process_id: lpdw_process_id as u64,
             window_id: format!("{:?}", active_window),
+            window_class: String::from("")
         };
 
         Ok(active_window)
